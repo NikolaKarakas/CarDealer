@@ -1,0 +1,14 @@
+package com.example.myapplication.Prevalent;
+
+import com.example.myapplication.Model.Users;
+
+public class Prevalent {
+
+
+    public static Users currentOnlineUser;
+
+
+    public static String UserName = "UserName";
+    public static  String UserEmail = "UserEmail";
+
+}

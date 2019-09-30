@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.CarSingleActivity">
+
+    <Button
+        android:id="@+id/updateCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/removeCarbutton"
+        android:text="Update Car"/>
+
+    <ImageView
+        android:id="@+id/singleCarImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+
+
+    <EditText
+        android:id="@+id/singleCarBrand"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleCarImage"
+        android:padding="15dp"
+        android:text="Product Brand"
+        android:background="@drawable/input_outline"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/singleCarPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleCarBrand"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:text="Price"
+        android:textSize="16dp"
+        android:background="@drawable/input_outline"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/singleCarDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleCarPrice"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/input_outline"
+        android:text="Description goes here"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/removeCarbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:text="Remove this Car" />
+
+
+</RelativeLayout>
